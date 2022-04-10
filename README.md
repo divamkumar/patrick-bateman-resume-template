@@ -1,6 +1,6 @@
 # The Patrick Bateman Resume Template: A killer (haha) resume template
 <div align="center">
-    <img src="images/PatrickBatemanResumeImage.png" alt="Image of the final product" width="80" height="80">
+    <img src="PatrickBatemanResumeImage.png" alt="Image of the final product" width="80" height="80">
 </div>
 
 ## About
