@@ -1,0 +1,67 @@
+%-------------------------
+% Title: Patrick Bateman Resume Template
+% Author : Divam Kumar
+% Website: https://github.com/divamkumar
+% License : MIT
+%------------------------
+
+\documentclass{patrickbatemanformat}
+
+% width=7in, height=10.5in, top margin=2cm on each page
+% Essentially setting 0.5 margins on all sides
+\usepackage[a4paper, total={7in, 10.5in}, top=0.5in]{geometry}
+
+% Define colors
+\usepackage{xcolor}	
+\definecolor{highlight}{HTML}{283559}
+\definecolor{highlight2}{HTML}{1A2640}
+\definecolor{link}{HTML}{5C6273}
+
+\usepackage{lipsum}
+\usepackage{siunitx}
+\usepackage{fontawesome5}
+
+% \nth{2} generates superscript
+\usepackage[super]{nth}
+
+% Set link colors
+\usepackage[
+	colorlinks = true,
+	linkcolor = highlight,
+	urlcolor = highlight,
+	citecolor= highlight
+]{hyperref}
+
+% Set main font
+\usepackage{fontspec}	
+\setmainfont[
+	BoldFont=EB Garamond Bold,
+	ItalicFont=EB Garamond Italic,
+	BoldItalicFont=EB Garamond Bold Italic
+]{EB Garamond Regular}
+
+
+% Create command to highlight text as bold and with above settings
+\newcommand{\highlight}[1]{\textcolor{highlight}{\textbf{#1}}}		
+% Equal contribution dagger
+\newcommand{\ec}{\textsuperscript{\textdagger}}
+
+\usepackage{fancyhdr}
+\fancyhf{}
+\pagestyle{empty}
+
+\usepackage{latexsym}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{enumitem}
+
+\begin{document}
+
+\input{PatrickBatemanResumeTemplate/Components/title}
+\input{PatrickBatemanResumeTemplate/Components/educationandhonors}
+\input{PatrickBatemanResumeTemplate/Components/professionalexperience}
+\input{PatrickBatemanResumeTemplate/Components/skills}
+\input{PatrickBatemanResumeTemplate/Components/projectsandleadership}
+
+\end{document}
